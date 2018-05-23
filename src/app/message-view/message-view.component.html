@@ -1,0 +1,9 @@
+
+	<div class="well" >
+		<ul class="list-group">
+			<app-message *ngFor="let obj of posts; let i = index" [index]="i" [blogIndex]="obj.id" [blogMessage]="obj.titre" [blogContent]="obj.contenu"  [blogLove]="obj.like">
+			
+			</app-message>
+		</ul>
+	</div>
+

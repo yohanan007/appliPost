@@ -1,0 +1,10 @@
+<li [ngClass]="{'list-group-item':true,'list-group-item-success':  blogLove>-1, 'list-group-item-danger':  blogLove<0 }" style="margin-bottom:1%;">
+
+<!--<i style="float:right;">{{ blogCreated| date: 'short' }}</i>-->
+<h4>{{ blogMessage }}</h4>
+<p>{{ blogContent }}</p>
+<p><i>nombre de j'aime</i><b>{{ blogLove }}</b></p>
+<button class="btn btn-success" (click)="love()">j'aime!</button>
+<button class="btn btn-danger" (click)="hate()">j'aime pas!</button>
+<button class="btn btn-danger" (click)="suppr(index)" style="float: right;">Supprimer le post</button>
+</li>
